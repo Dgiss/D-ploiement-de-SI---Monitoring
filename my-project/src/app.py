@@ -10,7 +10,7 @@ def subtract(a, b):
 
 @app.route('/')
 def hello_world():
-    return 'Hello, Mr. Mokrmñ!'
+    return 'Hello '
 
 @app.route('/sum', methods=['GET'])
 def sum_route():
