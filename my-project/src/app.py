@@ -7,7 +7,7 @@ from pythonjsonlogger import jsonlogger
 app = Flask(__name__)
 
 # Ensure the log directory exists
-log_dir = '/Users/jhin/cicd/projectTest'
+log_dir = './projectTest'
 log_file = os.path.join(log_dir, 'app.log')
 if not os.path.exists(log_dir):
     os.makedirs(log_dir)
