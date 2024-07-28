@@ -9,6 +9,9 @@ app = Flask(__name__)
 # Ensure the log directory exists
 log_dir = '/Users/jhin/cicd/projectTest'
 log_file = os.path.join(log_dir, 'app.log')
+if not os.path.exists(log_dir):
+    os.makedirs(log_dir)
+
 # Setup logging configuration
 handler = RotatingFileHandler(log_file, maxBytes=10000, backupCount=1)
 handler.setLevel(logging.INFO)
