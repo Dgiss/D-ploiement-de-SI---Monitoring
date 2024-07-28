@@ -2,3 +2,6 @@ __pycache__/
 *.pyc
 .vscode/
 .env
+elasticsearch-8.14.3
+kibana-8.14.3
+logstash-8.14.3
